@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Чат</title>
+    <link rel="stylesheet" href="registrationPage.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-16x16.png">
+  </head>
+  <body>
+   <div class="main-wrapper">
+    <div class="card">
+        <h2>Регистрация</h2>
+        <input id = "nameInput" type = "text" class="all-input" placeholder="Имя пользователя">
+        <input id = "loginInput" type="text" class ="all-input" placeholder = "Логин">
+        <input id = "passwordInput" type="text" class="all-input" placeholder="Пароль">
+        <button id = "registerButton" type="submit">Зарегистрироваться</button>
+        <button id = "backButton" type="submit">Назад</button>
+        <h3 id = "validationErrorMessage">Заполните все поля для регистрации!</h3>
+        <h3 id = "userAlreadyExistsErrorMessage">Пользователь с таким логином уже существует!</h3>
+        <h3 id = "successMessage">Вы были успешно зарегистрированы!</h3>
+    </div>
+   </div>
+  </body>
+  <script type = "module" src="registrationPage.js"></script>
+</html>

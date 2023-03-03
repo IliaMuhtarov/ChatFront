@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Чат</title>
+    <link rel="stylesheet" href="chatPage.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/favicon-16x16.png"
+    />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="header-wrapper">
+        <h1 id="headerMessage"></h1>
+      </div>
+      <div class="card">
+        <div class="dialogues">
+          <ul id="dialoguesList">
+            <li id="communication" style="text-align: center">Общий Чат</li>
+          </ul>
+        </div>
+        <div class="chat">
+          <h2 id="choseDialogMessageHeader">Выберите диалог</h2>
+          <div id="chatContainer" class="chat-container">
+            <div class="user-info-container">
+              <h2 id="companionNameHeader"></h2>
+              <i id="onTimeContainerButton" style="margin-right: 50px;" class="fa fa-calendar"></i>
+              <div id = "timeContainer" class="time-picker-container">
+                От  
+                <input class="date-input" type="date" id="startDatePicker">
+                До  
+                <input  class="date-input" type="date" id="endDatePicker">
+                <i id="searchButton" class="fa fa-search"></i>
+                <i id="offTimeContainerButton" style="margin-right: 50px; margin-left: 30px;" class="fa fa-times-circle"></i>
+              </div>
+            </div>
+            <div id="messageContainer" class="message-container"></div>
+            <div class="input-container">
+              <input
+                id="messageContentInput"
+                type="text"
+                class="all-input"
+                placeholder="Введите ваше сообщение..."
+              />
+              <button
+                id="sendMessageButton"
+                class="fas fa-location-arrow"
+                type="submit"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="chatPage.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+</html>
